@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Halaman Tidak Ditemukan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: var(--gray-50);">
+    <div style="text-align: center;">
+        <h1 style="font-size: 6rem; color: var(--primary-color); margin-bottom: 1rem;">404</h1>
+        <h2 style="color: var(--gray-700); margin-bottom: 1rem;">Halaman Tidak Ditemukan</h2>
+        <p style="color: var(--gray-600); margin-bottom: 2rem;">Maaf, halaman yang Anda cari tidak ada.</p>
+        <a href="{{ url_for('dashboard.index') }}" class="btn btn-primary">Kembali ke Dashboard</a>
+    </div>
+</body>
+</html>
